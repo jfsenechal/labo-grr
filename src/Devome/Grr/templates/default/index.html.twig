@@ -1,0 +1,26 @@
+{% extends '@Grr/layout.html.twig' %}
+
+{% block body %}
+
+    <div class="card">
+        <h3 class="card-header">Welcome</h3>
+        <div class="card-body">
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <a href="{{ path('grr_area_index') }}">
+                        Liste des domaines
+                    </a>
+                </li>
+            </ul>
+            <h4>Les domaines</h4>
+            {% include '@Grr/default/_area_list.html.twig' %}
+
+            <div class="alert alert-info">
+                Les liens fonctionnent si vous avez <a href="https://symfony.com/doc/current/setup.html#running-symfony-applications">
+                    démarrer le site avec symonfy cli
+                ou en configurant votre serveur web</a>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

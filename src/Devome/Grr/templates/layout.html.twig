@@ -1,0 +1,16 @@
+{% extends '@Grr/base5.html.twig' %}
+
+{% block title %}Grr{% endblock %}
+
+{% block brand %}
+    <a class="navbar-brand" href="{{ path('grr_home') }}" title="Accueil">
+        <i class="fas fa-home"></i> Home</a>
+{% endblock %}
+
+{% block menu_top %}
+    <li class="nav-item">
+        <a href="{{ path('grr_home') }}" class="nav-link">
+            <i class="fas fa-search"></i> Les domaines
+        </a>
+    </li>
+{% endblock %}

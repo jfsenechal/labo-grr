@@ -1,0 +1,14 @@
+<table class="table table-bordered">
+    <tr>
+        <th>Nom</th>
+    </tr>
+    {% for area in areas %}
+        <tr>
+            <th>
+                <a href="{{ path('grr_area_show', {'id':area.id}) }}">
+                    {{ area.areaName }}
+                </a>
+            </th>
+        </tr>
+    {% endfor %}
+</table>
